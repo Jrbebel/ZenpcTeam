@@ -146,6 +146,7 @@ img{
     display: block;
     position: relative;
     height: 200px;
+    width: 100%;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
@@ -263,11 +264,7 @@ author: bootply.com
     margin-top:8%;
 }
 
-@media screen and (min-width: 768px) {
-    #masthead h1 {
-        font-size: 50px;
-    }
-}
+
 
 #navbar {
   box-shadow: 0 5px 5px -5px #333;
@@ -277,8 +274,11 @@ author: bootply.com
     position: static;
 }
 
-@media (min-width: 979px) {
-    #sidebar.affix-top {
+@media (min-width: 970px) {
+      .body{
+       
+    }
+     #sidebar.affix-top {
         position: static;
         margin-top:30px;
 
@@ -289,6 +289,27 @@ author: bootply.com
         top:0px;
 
     }
+}
+
+@media (min-width: 1920px) {
+      .body{
+        background-color:aquamarine;
+           margin-top: 100px;
+          margin-bottom: 170px;
+    }
+    
+     #sidebar.affix-top {
+        position: static;
+        margin-top:30px;
+
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:0px;
+
+    }
+
 }
 
 #sidebar li.active {
