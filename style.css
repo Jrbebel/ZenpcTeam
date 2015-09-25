@@ -145,6 +145,7 @@ img{
 .hovereffect img {
     display: block;
     position: relative;
+    margin-bottom: 10px;
     height: 200px;
     width: 100%;
     -webkit-transition: all 0.2s ease-in;
@@ -293,7 +294,7 @@ author: bootply.com
 
 @media (min-width: 1920px) {
       .body{
-        background-color:aquamarine;
+      //  background-color:aquamarine;
            margin-top: 100px;
           margin-bottom: 170px;
     }
@@ -311,7 +312,26 @@ author: bootply.com
     }
 
 }
+@media (min-width: 1240px) {
+      .body{
+      //  background-color:aquamarine;
+         //  margin-top: 100px;
+          margin-bottom: 170px;
+    }
+    
+     #sidebar.affix-top {
+        position: static;
+        margin-top:30px;
 
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:0px;
+
+    }
+
+}
 #sidebar li.active {
     border:0 #eee solid;
     border-right-width:5px;

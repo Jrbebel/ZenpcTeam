@@ -194,45 +194,57 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-4">
                             <div class="hovereffect">
                                 <img src="img/ruffecard.png" class="img-thumbnail" alt="img_ruffecard" />
                                 <div class="overlay">
                                     <h2>Application Ruffecard</h2>
-                                    <a class="info" target="_self" href="http://gestiontitre.zenpcteam.ovh">Site</a>
+                                    <a class="info" target="_self" href="http://appruffecard.zenpcteam.ovh">Site</a>
                                 </div>
                             </div>
                         </div>
-                  <div class="col-lg-4">
+                        <div class="col-lg-4">
                             <div class="hovereffect">
                                 <img src="img/gestionfilm.png" class="img-thumbnail" alt="img_gestionfilm" />
                                 <div class="overlay">
                                     <h2>Application pour la gestion des films</h2>
-                                    <a class="info" target="_self" href="http://gestiontitre.zenpcteam.ovh">Site</a>
+                                    <a class="info" target="_self" href="http://gestionfilm.zenpcteam.ovh/">Site</a>
                                 </div>
                             </div>
-                        </div>      
-<!--
+                        </div> 
+
                         <div class="col-lg-4">
                             <div class="hovereffect">
-                                <img src="img/screen.png" class="img-thumbnail" alt="img_gestiontitre" />
+                                <img src="img/dosip.png" class="img-thumbnail" alt="img_dosip" />
                                 <div class="overlay">
-                                    <h2>Gestion des titres restaurant</h2>
-                                    <a class="info" target="_self" href="http://gestiontitre.zenpcteam.ovh">Site</a>
+                                    <h2>Site pour la DOSIP</h2>
+                                    <a class="info" target="_self" href="http://calamar.univ-ag.fr/dosip/">Site</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="hovereffect">
-                                <img src="img/screen.png" class="img-thumbnail" alt="img_gestiontitre" />
-                                <div class="overlay">
-                                    <h2>Gestion des titres restaurant</h2>
-                                    <a class="info" target="_self" href="http://gestiontitre.zenpcteam.ovh">Site</a>
-                                </div>
-                            </div>
-                        </div>
--->
+                        </div>        
+
+
+                        <!--
+                                                <div class="col-lg-4">
+                                                    <div class="hovereffect">
+                                                        <img src="img/screen.png" class="img-thumbnail" alt="img_gestiontitre" />
+                                                        <div class="overlay">
+                                                            <h2>Gestion des titres restaurant</h2>
+                                                            <a class="info" target="_self" href="http://gestiontitre.zenpcteam.ovh">Site</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="hovereffect">
+                                                        <img src="img/screen.png" class="img-thumbnail" alt="img_gestiontitre" />
+                                                        <div class="overlay">
+                                                            <h2>Gestion des titres restaurant</h2>
+                                                            <a class="info" target="_self" href="http://gestiontitre.zenpcteam.ovh">Site</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        -->
 
 
                     </div>
@@ -310,7 +322,7 @@ Mon footer
 </div>
 </div>
 </footer>        
--->
+        -->
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
@@ -323,7 +335,7 @@ Mon footer
             });
 
             /* activate scrollspy menu */
-            var $body   = $(document.body);
+            var $body = $(document.body);
             var navHeight = $('.navbar').outerHeight(true) + 10;
 
             $body.scrollspy({
@@ -332,10 +344,10 @@ Mon footer
             });
 
             /* smooth scrolling sections */
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html,body').animate({
                             scrollTop: target.offset().top - 50
