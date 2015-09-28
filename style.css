@@ -313,12 +313,25 @@ author: bootply.com
 
 }
 @media (min-width: 1240px) {
+    
+    @media (min-height : 1300px){
+        
       .body{
       //  background-color:aquamarine;
+         margin-top: 100px;
+          margin-bottom: 170px;
+    }
+    
+    }
+    @media (min-height : 700px){
+        
+      .body{
+    //   background-color:aquamarine;
          //  margin-top: 100px;
           margin-bottom: 170px;
     }
     
+    }
      #sidebar.affix-top {
         position: static;
         margin-top:30px;
