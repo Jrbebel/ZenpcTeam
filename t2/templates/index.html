@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,7 @@
     <meta name="author" content="Sergey Pimenov and Metro UI CSS contributors">
 
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
-    <title>Tiles examples :: Start Screen :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style</title>
-
+    <title>ZenPc Team</title>
     <link href="../css/metro.css" rel="stylesheet">
     <link href="../css/metro-icons.css" rel="stylesheet">
     <!--<link href="../css/metro-responsive.css" rel="stylesheet">-->
@@ -19,31 +19,40 @@
     <script src="../js/metro.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
 
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
     <style>
         .tile-area-controls {
             position: fixed;
             right: 40px;
             top: 40px;
         }
-
+        
         .tile-group {
             left: 100px;
         }
-
-        .tile, .tile-small, .tile-sqaure, .tile-wide, .tile-large, .tile-big, .tile-super {
+        
+        .tile,
+        .tile-small,
+        .tile-sqaure,
+        .tile-wide,
+        .tile-large,
+        .tile-big,
+        .tile-super {
             opacity: 0;
             -webkit-transform: scale(.8);
             transform: scale(.8);
         }
-
+        
         #charmSettings .button {
             margin: 5px;
         }
-
+        
         .schemeButtons {
             /*width: 300px;*/
         }
-
+        
         @media screen and (max-width: 640px) {
             .tile-area {
                 overflow-y: scroll;
@@ -52,21 +61,18 @@
                 display: none;
             }
         }
-
+        
         @media screen and (max-width: 320px) {
             .tile-area {
                 overflow-y: scroll;
             }
-
             .tile-area-controls {
                 display: none;
             }
-
         }
     </style>
 
     <script>
-
         /*
          * Do not use this is a google analytics fro Metro UI CSS
          * */
@@ -81,7 +87,6 @@
             ga('send', 'pageview');
 
         }
-
     </script>
 
     <script>
@@ -251,10 +256,11 @@
     </script>
 
 </head>
+
 <body style="overflow-y: hidden;">
     <div data-role="charm" id="charmSearch">
         <h1 class="text-light">Search</h1>
-        <hr class="thin"/>
+        <hr class="thin" />
         <br />
         <div class="input-control text full-size">
             <label>
@@ -273,7 +279,7 @@
 
     <div data-role="charm" id="charmSettings" data-position="top">
         <h1 class="text-light">Settings</h1>
-        <hr class="thin"/>
+        <hr class="thin" />
         <br />
         <div class="schemeButtons">
             <div class="button square-button tile-area-scheme-dark" data-scheme="dark"></div>
@@ -301,7 +307,7 @@
     </div>
 
     <div class="tile-area tile-area-scheme-dark fg-white" style="height: 100%; max-height: 100% !important;">
-        <h1 class="tile-area-title">Start</h1>
+        <h1 class="tile-area-title" style="font-family: 'Lobster', cursive;">ZenPc Team</h1>
         <div class="tile-area-controls">
             <button class="image-button icon-right bg-transparent fg-white bg-hover-dark no-border"><span class="sub-header no-margin text-light">Sergey Pimenov</span> <span class="icon mif-user"></span></button>
             <button class="square-button bg-transparent fg-white bg-hover-dark no-border" onclick="showCharms('#charmSearch')"><span class="mif-search"></span></button>
@@ -349,11 +355,11 @@
         </div>
 
         <div class="tile-group double">
-            <span class="tile-group-title">Images</span>
+            <span class="tile-group-title">Réalisations</span>
             <div class="tile-container">
                 <div class="tile-wide" data-role="tile" data-effect="slideLeft">
                     <div class="tile-content">
-                        <a href="http://google.com/search?q=bear" class="live-slide"><img src="../images/1.jpg" data-role="fitImage" data-format="fill"></a>
+                        <a href="http://google.com/search?q=bear" class="live-slide"><img src="../images/1.jpg " data-role="fitImage" data-format="fill"></a>
                         <a href="http://google.com/search?q=cat" class="live-slide"><img src="../images/2.jpg" data-role="fitImage" data-format="fill"></a>
                         <a href="http://google.com/search?q=dog" class="live-slide"><img src="../images/3.jpg" data-role="fitImage" data-format="fill"></a>
                         <a href="http://google.com/search?q=eagle" class="live-slide"><img src="../images/4.jpg" data-role="fitImage" data-format="fill"></a>
@@ -363,10 +369,10 @@
                 </div>
                 <div class="tile" data-role="tile" data-role="tile" data-effect="slideUpDown">
                     <div class="tile-content">
-                        <div class="live-slide"><img src="../images/me.jpg" data-role="fitImage" data-format="fill"></div>
+                        <div class="live-slide"><img src="../images/logo/webFront.png" data-role="fitImage" data-format="fill"></div>
                         <div class="live-slide"><img src="../images/spface.jpg" data-role="fitImage" data-format="fill"></div>
                     </div>
-                    <div class="tile-label">Photos</div>
+                    <div class="tile-label">Nos technos</div>
                 </div>
                 <div class="tile-small bg-amber fg-white" data-role="tile">
                     <div class="tile-content iconic">
@@ -402,14 +408,10 @@
             </div>
         </div>
 
-        <div class="tile-group one">
+        <!--div class="tile-group one">
             <span class="tile-group-title">Office</span>
 
-            <div class="tile-small bg-blue" data-role="tile">
-                <div class="tile-content iconic">
-                    <img src="../images/outlook.png" class="icon">
-                </div>
-            </div>
+
             <div class="tile-small bg-darkBlue" data-role="tile">
                 <div class="tile-content iconic">
                     <img src="../images/word.png" class="icon">
@@ -430,27 +432,29 @@
                     <img src="../images/powerpoint.png" class="icon">
                 </div>
             </div>
-        </div>
+        </div-->
 
         <div class="tile-group double">
-            <span class="tile-group-title">Games</span>
+            <span class="tile-group-title">Contact</span>
+
             <div class="tile-container">
-                <div class="tile" data-role="tile">
+                <div class="tile bg-darkGreen" data-role="tile">
+                    <div class="tile-content iconic" style="text-align:center;">
+                        <img src="../images/iconWin10/contacts.png">
+                    </div>
+                    <span class="tile-label">Formulaire</span>
+                </div>
+                <div class="tile-small" data-role="tile">
                     <div class="tile-content">
-                        <img src="../images/grid2.jpg" data-role="fitImage" data-format="square">
+                        <img src="../images/photo/jeanRaynal.jpg" data-role="fitImage" data-format="square">
                     </div>
                 </div>
                 <div class="tile-small" data-role="tile">
                     <div class="tile-content">
-                        <img src="../images/Battlefield_4_Icon.png" data-role="fitImage" data-format="square">
+                        <img src="../images/photo/jeanLouisStevie.jpg" data-role="fitImage" data-format="square">
                     </div>
                 </div>
-                <div class="tile-small" data-role="tile">
-                    <div class="tile-content">
-                        <img src="../images/Crysis-2-icon.png" data-role="fitImage" data-format="square" data-frame-color="bg-steel">
-                    </div>
-                </div>
-                <div class="tile-small" data-role="tile">
+                <!--div class="tile-small" data-role="tile">
                     <div class="tile-content">
                         <img src="../images/WorldofTanks.png" data-role="fitImage" data-format="square" data-frame-color="bg-dark">
                     </div>
@@ -459,17 +463,18 @@
                     <div class="tile-content">
                         <img src="../images/halo.jpg" data-role="fitImage" data-format="square">
                     </div>
-                </div>
-                <div class="tile-wide bg-green fg-white" data-role="tile">
+                </div-->
+
+                <div class="tile-large bg-steel fg-white" data-role="tile">
                     <div class="tile-content iconic">
-                        <img src="../images/x-box.png" class="icon">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.7014268033236!2d2.3050530159011857!3d48.78759011364285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670da92e13409%3A0x35e8e1aa7e5ea8ad!2sRue+des+Tertres%2C+92220+Bagneux!5e0!3m2!1sfr!2sfr!4v1463557146911"
+                            width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <div class="tile-label">X-Box Live</div>
                 </div>
             </div>
         </div>
 
-        <div class="tile-group double">
+        <!--div class="tile-group double">
             <span class="tile-group-title">Other</span>
             <div class="tile-container">
                 <div class="tile bg-teal fg-white" data-role="tile">
@@ -497,31 +502,41 @@
                     <span class="tile-label">OneDrive</span>
                 </div>
             </div>
-        </div>
+        </div-->
     </div>
 
     <!-- hit.ua -->
     <a href='http://hit.ua/?x=136046' target='_blank'>
-        <script language="javascript" type="text/javascript"><!--
+        <script language="javascript" type="text/javascript">
+            <!--
         Cd=document;Cr="&"+Math.random();Cp="&s=1";
         Cd.cookie="b=b";if(Cd.cookie)Cp+="&c=1";
         Cp+="&t="+(new Date()).getTimezoneOffset();
         if(self!=top)Cp+="&f=1";
-        //--></script>
-        <script language="javascript1.1" type="text/javascript"><!--
+        //-->
+        </script>
+        <script language="javascript1.1" type="text/javascript">
+            <!--
         if(navigator.javaEnabled())Cp+="&j=1";
-        //--></script>
-        <script language="javascript1.2" type="text/javascript"><!--
+        //-->
+        </script>
+        <script language="javascript1.2" type="text/javascript">
+            <!--
         if(typeof(screen)!='undefined')Cp+="&w="+screen.width+"&h="+
         screen.height+"&d="+(screen.colorDepth?screen.colorDepth:screen.pixelDepth);
-        //--></script>
-        <script language="javascript" type="text/javascript"><!--
+        //-->
+        </script>
+        <script language="javascript" type="text/javascript">
+            <!--
         Cd.write("<img src='http://c.hit.ua/hit?i=136046&g=0&x=2"+Cp+Cr+
         "&r="+escape(Cd.referrer)+"&u="+escape(window.location.href)+
         "' border='0' wi"+"dth='1' he"+"ight='1'/>");
-        //--></script></a>
+        //-->
+        </script>
+    </a>
     <!-- / hit.ua -->
 
 
 </body>
+
 </html>
