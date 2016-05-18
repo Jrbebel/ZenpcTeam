@@ -1,0 +1,387 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic);
+
+
+
+body {
+    background: #EEE;
+    
+}
+/*Affix css*/
+.affix {
+    position: fixed;
+    padding-bottom: 120px;
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.affix ~ .container-fluid {
+    position: relative;
+    top: 150px;
+}
+
+/*end affix*/
+
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: black;
+
+
+}
+/*style des items*/
+.body{
+    padding-top: 50px;
+    padding-bottom : 50px;
+
+
+}
+
+.item{
+    filter: drop-shadow;
+    background-color: white;
+    height: 200px;
+    margin-bottom: 30px;
+    padding: auto;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    box-shadow: 2px 2px 3px #000;
+}
+
+.item a {
+    color: #fff;
+    display: block;
+
+}
+
+.item a p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.item a i {
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+}
+
+
+/*start itembar*/
+
+.itembar{
+    margin: auto;
+    padding: auto;
+    height: 50px;
+    width: auto;    
+}
+.itembar a {
+    color: #fff;
+    display: block;
+}
+.itembar a p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.itembar a i {
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+.col-lg-2,col-md-2{
+    padding: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+/*end itembar*/
+
+
+/*Start body*/
+body{
+
+
+}
+/*End body*/
+
+/* Start Style pour la section 1 (portfolio)*/
+
+#section1,#section2,#section3,#section4,#section5,#section6{
+    height: 600px;
+}
+
+/*#section1{
+    background-color: #28ABE3;
+}
+
+#section2{
+    background-color:#72bf48;
+}
+#section3{
+    background-color:#FF432E;
+}*/
+.logobody{
+
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    padding: 10px;
+} 
+
+img{
+    height: auto;
+       -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+      box-shadow: 2px 2px 3px #000;
+}
+
+/*End Style pour la section 1 (portfolio*/
+
+
+
+/*Start effet image*/
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translate(460px, -100px) rotate(180deg);
+    -ms-transform: translate(460px, -100px) rotate(180deg);
+    transform: translate(460px, -100px) rotate(180deg);
+    -webkit-transition: all 0.2s 0.4s ease-in-out;
+    transition: all 0.2s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.hovereffect:hover h2 {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+/*End effet image */
+
+
+
+
+
+/*Les différentes couleurs des items*/
+
+.blue {
+    background: #28ABE3;
+}
+
+.green {
+    background: #72bf48;
+}
+
+.red {
+    background: #FF432E;
+}
+
+.light-red {
+    background: #FB6648;
+}
+
+.light-orange {
+    background: #FA6900;
+}
+
+.color {
+    background: #0ECEAB;
+}
+
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+
+#masthead { 
+    min-height:250px;
+}
+
+#masthead h1 {
+    font-size: 30px;
+    line-height: 1;
+    padding-top:20px;
+}
+
+#masthead .well {
+    margin-top:8%;
+}
+
+
+
+#navbar {
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.affix-top,.affix{
+    position: static;
+}
+
+@media (min-width: 970px) {
+    .body{
+
+    }
+    #sidebar.affix-top {
+        position: static;
+        margin-top:30px;
+
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:0px;
+
+    }
+}
+
+@media (min-width: 1920px) {
+    .body{
+        // background-color:aquamarine;
+        margin-top: 100px;
+        margin-bottom: 170px;
+    }
+
+    #sidebar.affix-top {
+        position: static;
+        margin-top:30px;
+
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:0px;
+
+    }
+
+}
+@media  (min-width: 1240px) {
+
+    @media (min-height : 1300px){
+
+        .body{
+            background-color:aquamarine;
+            margin-top: 100px;
+            margin-bottom: 170px;
+        }
+
+    }
+    @media screen and (min-height : 700px){
+
+        .body{
+            //  background-color:aquamarine;
+            //  margin-top: 100px;
+            padding-bottom: 180px;
+        }
+
+    }
+    #sidebar.affix-top {
+        position: static;
+        margin-top:30px;
+
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:0px;
+
+    }
+
+}
+#sidebar li.active {
+    border:0 #eee solid;
+    border-right-width:5px;
+}
+
+
+/*Style opur xs*/
+
+#navbarxs{
+    
+    margin-top:30px;
+}
