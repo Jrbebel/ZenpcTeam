@@ -1,3 +1,13 @@
+
+/***PERSONNAL MODIF *****/
+.technoRight {
+    float: right !important;
+}
+
+/***Fin personnal modif*****/
+
+
+
 html,
 body {
   padding: 0;

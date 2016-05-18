@@ -5350,7 +5350,8 @@ $.widget( "metro.fitImage" , {
             'background-image': 'url('+src+')',
             'background-size': 'cover',
             'background-repeat': 'no-repeat',
-            'border-radius': o.format === 'cycle' ? '50%' : '0'
+            'border-radius': o.format === 'cycle' ? '50%' : '0',
+            'background-position':'center'
         });
 
         $(window).on('resize', function(){
