@@ -1,0 +1,14 @@
+
+
+/***** PAGE CONTACT *******/
+
+/**
+*   Informations perso
+*/
+
+#contactZenPc p label>input, #locationField input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+}
