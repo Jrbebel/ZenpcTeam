@@ -21,7 +21,7 @@
 
     <!--font-->
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-<script src="https://use.fontawesome.com/4c390e06f1.js"></script>
+    <script src="https://use.fontawesome.com/4c390e06f1.js"></script>
     <style>
         .tile-area-controls {
             position: fixed;
@@ -314,12 +314,34 @@
             <button class="square-button bg-transparent fg-white bg-hover-dark no-border" onclick="showCharms('#charmSettings')"><span class="mif-cog"></span></button>
             <a href="../tiles.html" class="square-button bg-transparent fg-white bg-hover-dark no-border"><span class="mif-switch"></span></a>
         </div-->
+        <style type="text/css">
+            input {
+                background-color: #E8E8E8;
+                color: black;
+            }
+            /* placeholder only style */
+            
+            input.address:-ms-input-placeholder {
+                font-style: italic;
+                color: red;
+                background-color: yellow;
+            }
+        </style>
 
-        <div class="tile-group double">
-            <span class="tile-group-title">General</span>
+        <div class=" tile-group five">
+            <span class="tile-group-title">Formulaire de contact</span>
 
             <div class="tile-container">
 
+                <span class="tile-label">Nom</span>
+                <input type="text" value="name" />
+                <input type="text" value="adresse" />
+                <form id="test">
+                    <p><label>Enter Name: <input id="name" placeholder="Your Name"/></label></p>
+                    <p><label>Enter Street: <input id="street" placeholder="Your address" /></label></p>
+                    <p><label>Enter a zip code: <input type="num" pattern="(0-9){5}" title="5 digit zip" id="zip" class="address" placeholder="5 digit zip" /></label></p>
+                    <input type="submit" />
+                </form>
                 <a href="http://calendar.google.com" class="tile bg-indigo fg-white" data-role="tile">
                     <div class="tile-content iconic">
                         <span class="icon mif-calendar"></span>
@@ -354,224 +376,70 @@
             </div>
         </div>
         <div class="tile-group double">
-            <span class="tile-group-title">Nos Réalisations</span>
-            <div class="tile-container">
-                <div class="tile-wide" data-role="tile" data-effect="slideLeft">
-                    <div class="tile-content">
-                        <a href="http://google.com/search?q=cat" class="live-slide"><img src="../images/realisations/gestionfilm.png" data-role="fitImage" data-format="fill"></a>
-                        <a href="http://google.com/search?q=bear" class="live-slide"><img src="../images/realisations/dosip.png " data-role="fitImage" data-format="fill"></a>
-
-                    </div>
-                    <div class="tile-label">Gallery</div>
-                </div>
-                <div class="tile-wide" data-role="tile" data-effect="slideLeft">
-                    <div class="tile-content">
-                        <a href="http://google.com/search?q=dog" class="live-slide"><img src="../images/realisations/inra.png" data-role="fitImage" data-format="fill"></a>
-                        <a href="http://google.com/search?q=eagle" class="live-slide"><img src="../images/realisations/ruffecard.png" data-role="fitImage" data-format="fill"></a>
-                        <a href="http://google.com/search?q=fox" class="live-slide"><img src="../images/realisations/screen.png" data-role="fitImage" data-format="fill"></a>
-                    </div>
-                    <div class="tile-label">Gallery</div>
-                </div>
-
-
-                <!--div class="tile-wide bg-orange fg-white " data-role="tile ">
-                    <div class="tile-content image-set ">
-                        <img src="../images/jeki_chan.jpg ">
-                        <img src="../images/shvarcenegger.jpg ">
-                        <img src="../images/vin_d.jpg ">
-                        <img src="../images/jolie.jpg ">
-                        <img src="../images/jek_vorobey.jpg ">
-                    </div>
-                </div-->
-            </div>
-        </div>
-        <div class="tile-group double ">
-            <span class="tile-group-title ">Nos Technologies</span>
-            <div class="tile-container ">
-                <div class="tile bg-darkGreen " data-role="tile " data-role="tile " data-effect="slideUpDown ">
-                    <div class="tile-content ">
-                        <div class="live-slide "><img src="../images/logo/web.png " data-role="fitImage " data-format="fill "></div>
-                        <div class="live-slide "><img src="../images/spface.jpg " data-role="fitImage " data-format="fill "></div>
-                    </div>
-                    <div class="tile-label ">Web</div>
-                </div>
-                <div class="tile-small bg-amber fg-white " data-role="tile " data-role="tile " data-effect="slideUpDown ">
-                    <div class="tile-content ">
-                        <div class="live-slide "><img src="../images/logo/html5.png " data-role="fitImage
-                                " data-format="fill "></div>
-                    </div>
-                </div>
-                <div class="tile-small  bg-green fg-white" data-role="tile" data-role="tile" data-effect="slideUpDown">
-                    <div class="tile-content">
-                        <div class="live-slide"><img src="../images/logo/javascript.png" data-role="fitImage" data-format="fill"></div>
-                        <div class="live-slide"><img src="../images/logo/tomcat.png" data-role="fitImage" data-format="fill"></div>
-                    </div>
-                </div>
-                <div class="tile-small bg-amber fg-white" data-role="tile" data-role="tile" data-effect="slideUpDown">
-                    <div class="tile-content">
-                        <div class="live-slide"><img src="../images/logo/jquery.png" data-role="fitImage" data-format="fill"></div>
-                        <div class="live-slide"><img src="../images/logo/jenkins.png" data-role="fitImage" data-format="fill"></div>
-                    </div>
-                </div>
-                <div class="tile-small bg-amber fg-white" data-role="tile" data-role="tile" data-effect="slideUpDown">
-                    <div class="tile-content">
-                        <div class="live-slide mini-slider"><img src="../images/logo/css3.png" data-role="fitImage" data-format="fill"></div>
-                        <div class="live-slide"><img src="../images/logo/php.png" data-role="fitImage" data-format="fill"></div>
-                    </div>
-                </div>
-            </div>
-
-
+            <span class="tile-group-title">Contact Direct</span>
 
             <div class="tile-container ">
-                <div class="technoRight tile bg-darkBlue " data-role="tile " data-role="tile " data-effect="slideUpDown ">
-                    <div class="tile-content ">
-                        <div class="live-slide "><img src="../images/logo/server.png " data-role="fitImage " data-format="fill "></div>
-                        <div class="live-slide "><img src="../images/spface.jpg " data-role="fitImage " data-format="fill "></div>
+                <a href="contact.html">
+                    <div class="tile bg-darkGreen " data-role="tile ">
+                        <div class="tile-content iconic " style="text-align:center; ">
+                            <img src="../images/photo/jeanRaynal.jpg ">
+                        </div>
+                        <span class="tile-label " style="color:white !important">Jean-Raynal BEBEL</span>
                     </div>
-                    <div class="tile-label ">Serveur</div>
-                </div>
-                <div class="tile-small bg-amber fg-white " data-role="tile " data-role="tile " data-effect="slideUpDown ">
-                    <div class="tile-content ">
-                        <div class="live-slide "><img style="height:100% !important;" src="../images/logo/docker.png" data-role="fitImage" data-format="fill"></div>
-                        <div class="live-slide "><img src="../images/logo/javascript.png" data-role="fitImage" data-format="fill"></div>
-                    </div>
-                </div>
-                <div class="tile-small bg-green fg-white " data-role="tile " data-role="tile " data-effect="slideUpDown ">
-                    <div class="tile-content ">
-                        <div class="live-slide "><img src="../images/logo/javascript.png " data-role="fitImage
-                                " data-format="fill "></div>
-                        <div class="live-slide "><img src="../images/logo/tomcat.png " data-role="fitImage
-                                " data-format="fill "></div>
-                    </div>
-                </div>
-                <div class="tile-small bg-amber fg-white " data-role="tile " data-role="tile " data-effect="slideUpDown ">
-                    <div class="tile-content ">
-                        <div class="live-slide "><img src="../images/logo/jquery.png " data-role="fitImage
-                                " data-format="fill "></div>
-                        <div class="live-slide "><img src="../images/logo/jenkins.png " data-role="fitImage
-                                " data-format="fill "></div>
-                    </div>
-                </div>
-                <div class="tile-small bg-amber fg-white " data-role="tile " data-role="tile " data-effect="slideUpDown ">
-                    <div class="tile-content ">
-                        <div class="live-slide mini-slider "><img src="../images/logo/css3.png " data-role="fitImage
-                                " data-format="fill "></div>
-                        <div class="live-slide "><img src="../images/logo/php.png " data-role="fitImage " data-format="fill "></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!---  <div class="tile-wide bg-orange fg-white " data-role="tile ">
-                    <div class="tile-content image-set ">
-                        <img src="../images/jeki_chan.jpg ">
-                        <img src="../images/shvarcenegger.jpg ">
-                        <img src="../images/vin_d.jpg ">
-                        <img src="../images/jolie.jpg ">
-                        <img src="../images/jek_vorobey.jpg ">
-                    </div>
-                </div>->
-
-        <!--div class="tile-group one ">
-            <span class="tile-group-title ">Office</span>
-
-
-            <div class="tile-small bg-darkBlue " data-role="tile ">
-                <div class="tile-content iconic ">
-                    <img src="../images/word.png " class="icon ">
-                </div>
-            </div>
-            <div class="tile-small bg-green " data-role="tile ">
-                <div class="tile-content iconic ">
-                    <img src="../images/excel.png " class="icon ">
-                </div>
-            </div>
-            <div class="tile-small bg-red " data-role="tile ">
-                <div class="tile-content iconic ">
-                    <img src="../images/access.png " class="icon ">
-                </div>
-            </div>
-            <div class="tile-small bg-orange " data-role="tile ">
-                <div class="tile-content iconic ">
-                    <img src="../images/powerpoint.png " class="icon ">
-                </div>
-            </div>
-        </div-->
-
-        <div class="tile-group double ">
-            <span class="tile-group-title ">Contact</span>
-
-            <div class="tile-container "><a href="contact.html">
-                <div class="tile bg-darkGreen " data-role="tile ">
-                     
-                    <div class="tile-content iconic " style="text-align:center; ">
-                        <img style="margin-top:10% !important" src="../images/iconWin10/contacts.png ">
-                    </div>
-                    <span class="tile-label " style = "color:white !important">Formulaire</span>
-                </div></a>
+                </a>
                 <div class="tile-small " data-role="tile ">
                     <div class="tile-content ">
-                        <img src="../images/photo/jeanRaynal.jpg " data-role="fitImage " data-format="square ">
+                        <img src="../images/logo/linkedin.png " title="Linkedin" data-role="fitImage " data-format="square ">
                     </div>
                 </div>
                 <div class="tile-small " data-role="tile ">
                     <div class="tile-content ">
-                        <img src="../images/photo/jeanLouisStevie.jpg " data-role="fitImage " data-format="square ">
-                    </div>
-                </div>
-                <!--div class="tile-small " data-role="tile ">
-                    <div class="tile-content ">
-                        <img src="../images/WorldofTanks.png " data-role="fitImage " data-format="square
-                                " data-frame-color="bg-dark ">
+                        <img src="../images/logo/web2.png" data-role="fitImage " data-format="square ">
                     </div>
                 </div>
                 <div class="tile-small " data-role="tile ">
                     <div class="tile-content ">
-                        <img src="../images/halo.jpg " data-role="fitImage " data-format="square ">
+                        <img src="../images/logo/facebook.jpg" title="Facebook" data-role="fitImage " data-format="square ">                        </div>
+                </div>
+                <div class="tile-small " data-role="tile ">
+                    <div class="tile-content ">
+                        <img src="../images/logo/viadeo.jpg " data-role="fitImage " data-format="square ">
                     </div>
-                </div-->
+                </div>
+            </div>
 
-                <div class="tile-large bg-steel fg-white " data-role="tile ">
-                    <div class="tile-content iconic ">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.7014268033236!2d2.3050530159011857!3d48.78759011364285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670da92e13409%3A0x35e8e1aa7e5ea8ad!2sRue+des+Tertres%2C+92220+Bagneux!5e0!3m2!1sfr!2sfr!4v1463557146911 "
-                            width="400 " height="300 " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+            <div class="tile-container ">
+                <a href="contact.html">
+                    <div class="tile bg-darkGreen technoRight" data-role="tile ">
+                        <div class="tile-content iconic " style="text-align:center; ">
+                            <img src="../images/photo/jeanLouisStevie.jpg ">
+                        </div>
+                        <span class="tile-label " style="color:white !important">Stévie JEAN-LOUIS</span>
+                    </div>
+                </a>
+                <div class="tile-small " data-role="tile ">
+                    <div class="tile-content ">
+                        <img src="../images/logo/linkedin.png " title="Linkedin" data-role="fitImage " data-format="square ">
+                    </div>
+                </div>
+                <div class="tile-small " data-role="tile ">
+                    <div class="tile-content ">
+                        <img src="../images/logo/web2.png" data-role="fitImage " data-format="square ">
+                    </div>
+                </div>
+                <div class="tile-small " data-role="tile ">
+                    <div class="tile-content ">
+                        <img src="../images/logo/facebook.jpg" title="Facebook" data-role="fitImage " data-format="square ">                        </div>
+                </div>
+                <div class="tile-small " data-role="tile ">
+                    <div class="tile-content ">
+                        <img src="../images/logo/viadeo.jpg " data-role="fitImage " data-format="square ">
                     </div>
                 </div>
             </div>
         </div>
-
-        <!--div class="tile-group double ">
-            <span class="tile-group-title ">Other</span>
-            <div class="tile-container ">
-                <div class="tile bg-teal fg-white " data-role="tile ">
-                    <div class="tile-content iconic ">
-                        <span class="icon mif-pencil "></span>
-                    </div>
-                    <span class="tile-label ">Editor</span>
-                </div>
-                <div class="tile bg-darkGreen fg-white " data-role="tile ">
-                    <div class="tile-content iconic ">
-                        <span class="icon mif-shopping-basket "></span>
-                    </div>
-                    <span class="tile-label ">Store</span>
-                </div>
-                <div class="tile bg-cyan fg-white " data-role="tile ">
-                    <div class="tile-content iconic ">
-                        <span class="icon mif-skype "></span>
-                    </div>
-                    <div class="tile-label ">Skype</div>
-                </div>
-                <div class="tile bg-darkBlue fg-white " data-role="tile ">
-                    <div class="tile-content iconic ">
-                        <span class="icon mif-cloud "></span>
-                    </div>
-                    <span class="tile-label ">OneDrive</span>
-                </div>
-            </div>
-        </div-->
     </div>
+
 
     <!-- hit.ua -->
     <a href='http://hit.ua/?x=136046' target='_blank'>
