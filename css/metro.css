@@ -3,7 +3,11 @@
 .technoRight {
     float: right !important;
 }
-
+.tile-small.bg-darkGrey{
+  
+  background: darkgrey !important;
+  background-color: darkgrey !important;
+}
 /***Fin personnal modif*****/
 
 
