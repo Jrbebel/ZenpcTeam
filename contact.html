@@ -335,96 +335,75 @@
                 background-color: yellow;
             }
         </style>
+        <form id="contactZenPc">
+            <div class=" tile-group triple">
+                <span class="tile-group-title">Informations Personnelles</span>
 
-        <div class=" tile-group triple">
-            <span class="tile-group-title">Informations Personnelles</span>
+                <div class="tile-container">
 
-            <div class="tile-container">
 
-                <form id="contactZenPc">
                     <p><label>Name <input placeholder="Nom"/></label></p>
                     <p><label>Prénom <input placeholder="Prénom" /></label></p>
                     <p><label>Email <input placeholder="Email" /></label></p>
-                   <p><label>Adresse 
+                    <p><label>Adresse 
                 
                 <div id="locationField">
                     <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text"></input>
                 </div>
                 </label></p>
-                <table id="address">
-                    <tr>
-                        <td class="label">Street address</td>
-                        <td class="slimField"><input class="field" id="street_number" disabled="true"></input>
-                        </td>
-                        <td class="wideField" colspan="2"><input class="field" id="route" disabled="true"></input>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="label">City</td>
-                        <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true"></input>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="label">State</td>
-                        <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true"></input>
-                        </td>
-                        <td class="label">Zip code</td>
-                        <td class="wideField"><input class="field" id="postal_code" disabled="true"></input>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="label">Country</td>
-                        <td class="wideField" colspan="3"><input class="field" id="country" disabled="true"></input>
-                        </td>
-                    </tr>
-                </table>
-                    <!--
-                    <p><label>Numéro de téléphone <input type="email" pattern="(0-9){5}" title="5 digit zip" id="zip" class="address" placeholder="5 digit zip" /></label></p>
-                    -->
-
-                    <input type="submit" />
-                </form>
-                <!--a href="http://calendar.google.com" class="tile bg-indigo fg-white" data-role="tile">
-                    <div class="tile-content iconic">
-                        <span class="icon mif-calendar"></span>
+                    <div id="address">
+                        <p><label>N°  -  Rue</label><input class="field" id="street_number" disabled="true"></input>
+                        <input class="field" id="route" disabled="true"></input>
+                        </p>
                     </div>
-                    <span class="tile-label">Calendar</span>
-                </a>
+                    <td class="label"></td>
+                    <td class="slimField">
+                    </td>
+                    <!--td class="label">Rue / Place / ....</td-->
+                    <td class="wideField" colspan="2">
+                    </td>
 
-                <div class="tile bg-darkBlue fg-white" data-role="tile" onclick="document.location.href='http://gmail.com'">
-                    <div class="tile-content iconic">
-                        <span class="icon mif-envelop"></span>
-                    </div>
-                    <span class="tile-label">Inbox</span>
-                </div-->
+                    <table class="address">
+                        <tr>
 
-                <!--div class="tile-large bg-steel fg-white" data-role="tile" data-on-click="document.location.href='http://forecast.io'">
-                    <div class="tile-content" id="weather_bg" style="background: top left no-repeat; background-size: cover">
-                        <div class="padding10">
-                            <h1 id="weather_icon" style="font-size: 6em;position: absolute; top: 10px; right: 10px;"></h1>
-                            <h1 id="city_temp"></h1>
-                            <h2 id="city_name" class="text-light"></h2>
-                            <h4 id="city_weather"></h4>
-                            <p id="city_weather_daily"></p>
+                        </tr>
+                        <tr>
 
-                            <p class="no-margin text-shadow">Pressure: <span class="text-bold" id="pressure"></span> mm</p>
-                            <p class="no-margin text-shadow">Ozone: <span class="text-bold" id="ozone"></span></p>
-                            <p class="no-margin text-shadow">Wind bearing: <span class="text-bold" id="wind_bearing"></span></p>
-                            <p class="no-margin text-shadow">Wind speed: <span class="text-bold" id="wind_speed">0</span> m/s</p>
-                        </div>
-                    </div>
-                    <span class="tile-label">Weather</span>
-                </div-->
+                        </tr>
+                        <tr>
+                            <td class="label"></td>
+                            <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">State</td>
+                            <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">Code Postal</td>
+                            <td class="wideField"><input class="field" id="postal_code" disabled="true"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">Pays</td>
+                            <td class="wideField" colspan="3"><input class="field" id="country" disabled="true"></input>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
             </div>
-        </div>
-        <div class="tile-group triple">
-            <span class="tile-group-title">Message</span>
-            <div class="tile-container">
-                <textarea class="texteareaMessage" rows="10" ></textarea>
-               
-
+            <div class="tile-group triple">
+                <span class="tile-group-title">Message</span>
+                <div class="tile-container">
+                    <textarea class="texteareaMessage" rows="10"></textarea>
+                </div>
+                <br/>
+                <input id="submitContact" type="submit" />
             </div>
-        </div>
+        </form>
         <div class="tile-group triple">
             <span class="tile-group-title">Contact Direct</span>
 
