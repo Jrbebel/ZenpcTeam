@@ -12,8 +12,6 @@
     height: 40px;
     
 }
-
-
 .texteareaMessage{
     width: 100%;
     height: 320px;
@@ -35,4 +33,13 @@ input[type="submit"] {
 }
 #address p>input{
     margin-left: 30px;
+}
+
+
+/**
+* Liens Perso
+*/
+.imgPerso{
+    width:100%;
+    
 }
